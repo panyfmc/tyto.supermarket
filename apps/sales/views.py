@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Sale
 
-# Create your views here.
+def sale_list(request):
+    sales = Sale.objects.all()
+    return render(request, 'sales.html', {'sales': sales})
