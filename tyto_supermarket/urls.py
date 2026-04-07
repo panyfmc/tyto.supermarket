@@ -13,5 +13,7 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/products/', include('apps.products.urls')),
+    path('api/clients/', include('apps.clients.urls')),
+    path('api/sales/', include('apps.sales.urls')),
 
 ]
