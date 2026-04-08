@@ -104,14 +104,26 @@ Authorization: Bearer SEU_ACCESS_TOKEN
 ## 📦 Endpoints principais
 
 ### Produtos
-- **GET /api/products/** → listar
-- **POST /api/products/** → criar
+- **GET /api/products/** → listar todos os produtos
+- **GET /api/products/{id}/** → detalhar um produto
+- **POST /api/products/** → criar produto
+- **PUT /api/products/{id}/** → atualizar tudo
+- **PATCH /api/products/{id}/** → atualizar parcial
+- **DELETE /api/products/{id}/** → deletar
+
 ### Clientes
-- **GET /api/clients/**
-- **POST /api/clients/**
+- GET /api/clients/
+- GET /api/clients/{id}/
+- POST /api/clients/
+- PUT /api/clients/{id}/
+- PATCH /api/clients/{id}/
+- DELETE /api/clients/{id}/
 ### Vendas
-- **GET /api/sales/**
-- **POST /api/sales/**
+- GET /api/sales/
+- POST /api/sales/
+- PUT /api/sales/{id}/
+- PATCH /api/sales/{id}/
+- DELETE /api/sales/{id}/
 
 --
 
